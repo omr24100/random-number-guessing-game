@@ -1,0 +1,7 @@
+// GuessingGame.h
+#ifndef GUESSINGGAME_H
+#define GUESSINGGAME_H
+
+void startGuessingGame();  // Starts the game and allows repeat
+
+#endif
