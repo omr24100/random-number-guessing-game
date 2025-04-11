@@ -1,0 +1,27 @@
+int main() {
+   
+    srand(static_cast<unsigned int>(time(0)));
+
+   
+    int secretNumber = rand() % 100 + 1;
+    int guess;
+
+    cout << "Guess the number (between 1 and 100): ";
+
+    
+    do {
+        cin >> guess;
+
+        if (guess > secretNumber) {
+            cout << "Too high, try again: ";
+        }
+        else if (guess < secretNumber) {
+            cout << "Too low, try again: ";
+        }
+        else {
+            cout << "Congratulations! You guessed the number!" << endl;
+        }
+
+    } while (guess != secretNumber);
+
+    return 0;
